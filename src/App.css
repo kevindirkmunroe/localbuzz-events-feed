@@ -1,0 +1,64 @@
+body {
+  margin: 0;
+  font-family: system-ui, sans-serif;
+  background: #f7f5f2;
+  color: #1f1f1f;
+}
+
+.page {
+  width: min(900px, calc(100% - 32px));
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.event-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.event-card {
+  background: white;
+  border-radius: 14px;
+  padding: 18px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.07);
+}
+
+.event-card h2 {
+  margin: 0 0 8px;
+  font-size: 1.25rem;
+}
+
+.date {
+  font-weight: 600;
+  color: #d2492c;
+}
+
+.description {
+  line-height: 1.45;
+}
+
+a {
+  color: #d2492c;
+  font-weight: 600;
+}
+
+@media (max-width: 600px) {
+  .page {
+    width: calc(100% - 24px);
+    padding: 16px 0;
+  }
+
+  .event-card {
+    padding: 14px;
+  }
+
+  h1 {
+    font-size: 1.6rem;
+  }
+}
