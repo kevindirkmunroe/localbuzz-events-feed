@@ -32,7 +32,18 @@ function App() {
 
   return (
       <main className="page">
-        <h1>LocalBuzz Events</h1>
+        <div style={{color: "#D2492C", display: "flex", alignItems: "center", gap: "2px", cursor: "pointer" }}>
+          <img
+              src="/localbuzz2.png"
+              alt="Logo"
+              style={{
+                height: "54px",
+                width: "auto",
+                objectFit: "contain"
+              }}
+          />
+          <strong style={{fontSize: "24px"}}>LocalBuzz / <b>Events</b></strong>
+        </div>
 
         <div className="event-list">
           {events.map((event) => (
