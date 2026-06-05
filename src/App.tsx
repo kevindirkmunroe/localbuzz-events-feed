@@ -31,21 +31,24 @@ function App() {
   if (loading) return <main className="page">Loading events...</main>;
 
   return (
-      <main className="page">
-        <div style={{color: "#D2492C", display: "flex", alignItems: "center", gap: "2px", cursor: "pointer" }}>
-          <img
-              src="/localbuzz2.png"
-              alt="Logo"
-              style={{
-                height: "54px",
-                width: "auto",
-                objectFit: "contain"
-              }}
-          />
-          <strong style={{fontSize: "24px"}}>LocalBuzz / <b>Events</b></strong>
-        </div>
+      <div className="page">
+          <div className="header">
+              <img
+                  src="/localbuzz2.png"
+                  alt="Logo"
+                  style={{
+                      height: "54px",
+                      width: "auto",
+                      objectFit: "contain"
+                  }}
+              />
+              <strong style={{ fontSize: "24px" }}>
+                  LocalBuzz / <b>Events</b>
+              </strong>
+          </div>
 
-        <div className="event-list">
+          <div className="event-list">
+              {/* events */}
           {events.map((event) => (
               <article key={event.event_id} className="event-card">
                 <h2>{event.title}</h2>
@@ -71,7 +74,7 @@ function App() {
               </article>
           ))}
         </div>
-      </main>
+      </div>
   );
 }
 
