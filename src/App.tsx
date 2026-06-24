@@ -18,6 +18,18 @@ const api = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL
 });
 
+function formatLocalBuzzDate(value: string) {
+    const [datePart, timePart] = value.split(" ");
+    const [year, month, day] = datePart.split("-");
+    const [hour, minute] = timePart.split(":");
+
+    const hourNum = Number(hour);
+    const ampm = hourNum >= 12 ? "PM" : "AM";
+    const hour12 = hourNum % 12 || 12;
+
+    return `${Number(month)}/${Number(day)}/${year}, ${hour12}:${minute} ${ampm}`;
+}
+
 function App() {
   const [events, setEvents] = useState<EventItem[]>([]);
   const [loading, setLoading] = useState(true);
@@ -54,13 +66,7 @@ function App() {
                 <h2>{event.title}</h2>
 
                 <p className="date">
-                  {new Date(event.start_datetime).toLocaleString(undefined, {
-                      year: 'numeric',
-                      month: 'numeric',
-                      day: 'numeric',
-                      hour: 'numeric',
-                      minute: '2-digit'
-                  })}
+                    {formatLocalBuzzDate(event.start_datetime)}
                 </p>
 
                 {event.location_name && <p><strong>Venue:</strong> {event.location_name}</p>}
