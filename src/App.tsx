@@ -54,7 +54,13 @@ function App() {
                 <h2>{event.title}</h2>
 
                 <p className="date">
-                  {new Date(event.start_datetime).toLocaleString()}
+                  {new Date(event.start_datetime).toLocaleString(undefined, {
+                      year: 'numeric',
+                      month: 'numeric',
+                      day: 'numeric',
+                      hour: 'numeric',
+                      minute: '2-digit'
+                  })}
                 </p>
 
                 {event.location_name && <p><strong>Venue:</strong> {event.location_name}</p>}

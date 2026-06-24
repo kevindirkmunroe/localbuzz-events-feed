@@ -1,0 +1,37 @@
+The key insight is that LocalBuzz isn't competing with Facebook Ads or Google Ads directly. It's helping businesses extract more value from a marketing channel they already know is valuable but underutilize because it's tedious.
+
+Here's a Battlefield/investor-ready framing:
+
+Local businesses, venues, and event organizers already understand the value of free and low-cost event calendars such as SF Funcheap, Visit Oakland, Indybay, and similar platforms. These sites provide targeted local audiences, referral traffic, SEO backlinks, and event discovery opportunities that would otherwise require paid advertising to replicate.
+
+The problem is that accessing this value requires significant manual effort. Organizers often spend hours each week re-entering the same event information across multiple websites, each with its own forms, categories, and submission requirements. As a result, many businesses either limit the number of platforms they use or stop using them altogether.
+
+LocalBuzz transforms these fragmented marketing channels into a single workflow. Users create an event once, and LocalBuzz helps populate multiple event calendars from a single source of truth.
+
+The economic value is straightforward. If an organizer spends three hours per week submitting events manually and values their time at $25 per hour, that represents nearly $4,000 per year in labor costs. LocalBuzz reduces that administrative burden while helping businesses capture the traffic, exposure, and SEO benefits of appearing on more event calendars.
+
+In short, LocalBuzz does not create a new marketing channel. It unlocks the full value of marketing channels that already work.
+
+What I particularly like about this argument is that it shifts the conversation from:
+
+"Will people pay for event promotion software?"
+to:
+
+"Will people pay $19-$49/month to save several hours per month while increasing exposure?"
+That's a much easier purchasing decision.
+
+It also gives you a useful ROI formula for sales conversations:
+
+Hours spent posting manually per month × hourly value of owner's time
++
+additional traffic/reach gained from posting to more calendars
+=
+LocalBuzz value
+For example, if a wine bar manager spends just 2 hours/week posting events and values their time at $30/hour:
+
+2 hrs/week × 52 weeks × $30/hr
+= $3,120/year
+Against a hypothetical $29/month LocalBuzz subscription:
+
+$348/year
+The customer doesn't need LocalBuzz to generate thousands of dollars of new revenue. It only needs to save a fraction of the time they're already spending on manual promotion. That makes for a much stronger business case.
