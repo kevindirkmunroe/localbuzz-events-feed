@@ -18,10 +18,18 @@ const api = axios.create({
   baseURL: import.meta.env.VITE_API_BASE_URL
 });
 
-function formatLocalBuzzDate(value: string) {
-    const [datePart, timePart] = value?.split(" ");
-    const [year, month, day] = datePart?.split("-");
-    const [hour, minute] = timePart?.split(":");
+function formatLocalBuzzDate(value?: string | null) {
+    if (!value) return "Date TBD";
+
+    const normalized = value.replace("T", " ").replace("Z", "");
+    const [datePart, timePartRaw] = normalized.split(" ");
+
+    if (!datePart || !timePartRaw) return value;
+
+    const [year, month, day] = datePart.split("-");
+    const [hour, minute = "00"] = timePartRaw.split(":");
+
+    if (!year || !month || !day || !hour) return value;
 
     const hourNum = Number(hour);
     const ampm = hourNum >= 12 ? "PM" : "AM";
