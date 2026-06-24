@@ -19,9 +19,9 @@ const api = axios.create({
 });
 
 function formatLocalBuzzDate(value: string) {
-    const [datePart, timePart] = value.split(" ");
-    const [year, month, day] = datePart.split("-");
-    const [hour, minute] = timePart.split(":");
+    const [datePart, timePart] = value?.split(" ");
+    const [year, month, day] = datePart?.split("-");
+    const [hour, minute] = timePart?.split(":");
 
     const hourNum = Number(hour);
     const ampm = hourNum >= 12 ? "PM" : "AM";
