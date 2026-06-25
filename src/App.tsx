@@ -63,7 +63,7 @@ function App() {
                   }}
               />
               <strong style={{ fontSize: "24px" }}>
-                  LocalBuzz / <b>Events</b>
+                  LocalBuzz / <b>Fresh Events</b>
               </strong>
           </div>
 
